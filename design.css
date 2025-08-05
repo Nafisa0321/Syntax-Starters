@@ -1,0 +1,247 @@
+h1{
+    font-size: 70px;
+    text-align: center;
+    font-weight: 800;
+     font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(0, 56, 73);
+    font-weight: 300;
+}
+body{
+    background-color: rgb(216, 249, 255);
+}
+p, .python-steps{
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: rgb(0, 56, 73)
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #004F6B;
+  opacity: 80%;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: 2px solid #D1F2FF;
+  color: #D1F2FF;
+  padding: 0.5rem 1rem;
+      font-family: "Source Code Pro", monospace;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav-btn:hover {
+  background-color: #D1F2FF;
+  color: #004F6B;
+}
+
+body {
+  background: linear-gradient(270deg, #5e8d96, #3caeca, #bff8ff);
+  background-size: 600% 600%;
+  animation: bgMove 20s ease infinite;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.sparkle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  filter: drop-shadow(0 0 4px white);
+  animation: sparkleAnim 2.5s infinite ease-in-out;
+}
+
+.sparkle1 {
+  top: 20%;
+  left: 30%;
+  animation-delay: 0s;
+}
+
+.sparkle2 {
+  top: 50%;
+  left: 60%;
+  animation-delay: 1s;
+}
+
+.sparkle3 {
+  top: 80%;
+  left: 40%;
+  animation-delay: 2s;
+}
+.sparkle4 {
+  top: 35%;
+  left: 75%;
+  animation-delay: 0.7s;
+}
+
+.sparkle5 {
+  top: 10%;
+  left: 50%;
+  animation-delay: 1.3s;
+}
+
+.sparkle6 {
+  top: 65%;
+  left: 80%;
+  animation-delay: 2.1s;
+}
+
+.sparkle7 {
+  top: 55%;
+  left: 90%;
+  animation-delay: 2.1s;
+}
+
+.sparkle8 {
+  top: 35%;
+  left: 10%;
+  animation-delay: 2.1s;
+}
+
+.sparkle9 {
+  top: 15%;
+  left: 80%;
+  animation-delay: 2.1s;
+}
+
+.sparkle10 {
+  top: 35%;
+  left: 60%;
+  animation-delay: 2.1s;
+}
+
+
+
+@keyframes sparkleAnim {
+  0%, 100% { opacity: 0; transform: scale(0.5) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1) rotate(45deg); }
+}
+
+
+
+.language-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1150px;
+  margin: 0 auto 1.5rem;
+font-family: "Source Code Pro", monospace;
+}
+
+.lang-tab-box {
+  background-color: #D1F2FF;
+  border: 2px solid #004F6B;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #004F6B;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px; /* enough space for writing */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lang-tab-box:hover {
+  background-color: #004F6B;
+  color: #D1F2FF;
+}
+
+@media (max-width: 600px) {
+  .language-tabs {
+    grid-template-columns: repeat(2, 1fr); /* 2 boxes per row on small screens */
+    max-width: 100%; /* use full width */
+    gap: 0.75rem;
+  }
+}
+
+
+.language-guide {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.full-tab {
+  background-color: #D1F2FF;
+  border: 2px solid #004F6B;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  color: #004F6B;
+}
+
+.full-tab h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.steps {
+  text-align: left;
+  padding-left: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.steps li {
+  margin-bottom: 0.75rem;
+}
+
+.bottom-tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.full-tab h2 {
+  padding-right: 80px; /* adjust as needed */
+  padding-left: 10px;
+  align-items: center;
+}
+
+
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
